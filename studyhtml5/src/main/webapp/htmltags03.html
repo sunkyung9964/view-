@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>자바 백엔드 개발자 프로필</title>
+	<style>
+	/* 선택자 : 스타일을 적용할 대상을 가르키는 css 문법
+		선택자 {
+			속성1: 값1;
+			속성2: 값2;
+			...계속...
+		}
+		(0) 공용 선택자/전체 선택자/Universal Selector
+		(1) 클래스 (선택자) : .icons   <반복, 재사용 목적>:디자인
+		(2) 아이디 (선택자) : #icons   <문서내에서 단 한번만 사용하는 목적>:통신, 기능
+		(3) 태그 선택자 : p / h1 / img ...
+		(4) 그룹 선택자 : p, h1, a <-- p랑 h1이랑 a 랑..		
+		
+	*/
+	.text-center {
+		text-align: center;
+	}
+	.d-none {
+		display: none; /* 표시 : 안함 */
+	}
+	h1, h2, h3 {
+		text-align: center;
+	}
+	.profile {
+		text-align: center;
+	}
+	.icons {
+		display: flex;  /* 표시방법 : 플렉스 */
+		justify-content: center; /* 컨텐츠-정렬: 가운데 */
+		column-gap: 1rem; /* 컬럼-간격: 1rem (만큼 띄어줘 )*/
+		text-align: center; /* 텍스트-정렬: 가운데 */
+	}
+	</style>
+</head>
+<body class="text-center">
+	<!-- HTML 주석 -->
+	<h1 class="d-none">about</h1>
+	<div class="profile">
+		<img src="images/photo.png" alt="선영훈">
+	</div>
+	<h2>yeonghun, seon</h2>
+	<p>한울직업전문학교 개발자과정 훈련교사, 웹/앱 개발</p>
+	<p>Where there is a will there is a way</p>
+	<h3>social</h3>
+	<div class="icons">
+		<div>
+			<img src="images/blog_icon.png" alt="link to blog">
+			<p>blog</p>
+		</div>
+		<div>
+			<img src="images/fb_icon.png" alt="link to facebook">
+			<p>facebook</p>
+		</div>
+		<div>
+			<img src="images/github_icon.png" alt="link to github">
+			<p>github</p>
+		</div>
+	</div>
+</body>
+</html>
